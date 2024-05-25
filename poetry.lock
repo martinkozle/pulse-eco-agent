@@ -1935,13 +1935,13 @@ files = [
 
 [[package]]
 name = "pulse-eco"
-version = "2.3.0"
+version = "2.3.1"
 description = "pulse.eco API wrapper"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "pulse_eco-2.3.0-py3-none-any.whl", hash = "sha256:ff99026b9a807027274ef375cdec655a7ee988b6e88f93edef73af35d0b414ab"},
-    {file = "pulse_eco-2.3.0.tar.gz", hash = "sha256:2b55ddf86f2afe819e422191ae57a3e1c383ec3122c3d351422cd647cc548d86"},
+    {file = "pulse_eco-2.3.1-py3-none-any.whl", hash = "sha256:bc8804d15094330622f5a9c4f9764639b6860f3c48f148835631adff47e5c116"},
+    {file = "pulse_eco-2.3.1.tar.gz", hash = "sha256:596b86ced0894fc09fb7065cde9b9a8329fe0c58ba83816f2f1a0f742d02a396"},
 ]
 
 [package.dependencies]
@@ -2883,4 +2883,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "4b2e5f6a2c6bbf5bf4b04915340c057100d5088b2030071455aa93abf61c48c9"
+content-hash = "5b6c33feb0d107717aad38b5d5eab356078a7f71e3ff277934fb1976677c664b"
