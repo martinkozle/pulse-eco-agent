@@ -1,0 +1,79 @@
+[tool.poetry]
+name = "pulse-eco-agent"
+version = "0.1.0"
+description = ""
+authors = ["Martin Popovski <martinkozle@yahoo.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+langchain = "^0.1.16"
+pulse-eco = { extras = ["client", "httpx"], version = "^2.3.0" }
+langchainhub = "^0.1.15"
+devtools = "^0.12.2"
+langchain-openai = "^0.1.4"
+osmpythontools = "^0.3.5"
+opencage = "^2.4.0"
+python-dotenv = "^1.0.1"
+geopy = "^2.4.1"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.9.0"
+ruff = "^0.4.5"
+ipython = "^8.23.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+python_version = "3.12"
+# plugins = ["pydantic.mypy"]
+strict = true
+
+[[tool.mypy.overrides]]
+module = ["opencage.*", "geopy.*"]
+ignore_missing_imports = true
+
+[tool.ruff]
+target-version = "py312"
+preview = true
+
+[tool.ruff.lint]
+select = [
+    "F",
+    "I",
+    "N",
+    "UP",
+    "YTT",
+    "ANN",
+    "ASYNC",
+    "S",
+    "B",
+    "C4",
+    "DTZ",
+    "FA",
+    "ISC",
+    "ICN",
+    "G",
+    "INP",
+    "PIE",
+    "PT",
+    "RSE",
+    "RET",
+    "SLF",
+    "SIM",
+    "TID",
+    "TCH",
+    "PTH",
+    "PGH",
+    "PL",
+    "TRY",
+    "FLY",
+    "PERF",
+    "FURB",
+    "LOG",
+    "RUF",
+]
+ignore = ["E501", "ANN101", "PLR0913", "PLR0917", "PLR2004", "ISC001"]
